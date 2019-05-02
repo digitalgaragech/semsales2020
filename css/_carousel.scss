@@ -1,0 +1,37 @@
+.owl-banners{
+    background-color: $dark-color;
+    height: calc(100vh - #{$header__height});
+    @media screen and (min-width: $breakpoint-small) {
+        height: calc(100vh - #{$header__height--tablet});
+    }
+    @media screen and (min-width: $breakpoint-large) {
+        height: calc(100vh - #{$header__height--desktop});
+    }
+    overflow: hidden;
+    *{
+        color: #fff;
+    }
+    a:hover{
+      color: $light-color;
+    }
+    .entry-header *{
+      margin: 0;
+    }
+    .entry-content{
+      margin: 40px 0
+    }
+}
+
+.entry-banner{
+    position: absolute;
+    top: 10vh;
+    left: 20vh;
+    p{
+      font-size: 40px;
+    }
+}
+.owl-nav,
+.owl-dots{
+    position: relative;
+    z-index: 10;
+}

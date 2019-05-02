@@ -1,0 +1,26 @@
+// SIMPLE GRID - SASS/SCSS
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,700');
+
+
+@import 'variables';
+@import 'base';
+@import '../sass/navigation/navigation';
+@import 'simple-grid';
+@import 'header';
+@import 'carousel';
+@import 'events';
+@import 'buttons';
+
+body{
+    background-color: #eee;
+} 
+img{
+    max-width: 100%;
+    height: auto;
+}
+.section-heading{
+    padding:60px;
+    margin: 0;
+}

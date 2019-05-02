@@ -1,0 +1,66 @@
+// fonts
+$font-family: 'Montserrat', Helvetica, sans-serif;
+$font-family-OpenSans: 'Open Sans', Helvetica, sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 300;
+$font-weight-heavy: 700;
+$font-height: 1.5;
+
+// colors
+$gray-color: #706C7B;
+$dark-grey-color: #333447;
+$dark-color: #2A0F76;
+$dark-color--bg: #E2D8FE;
+$dark-color--hover: #1b094e;
+$light-color: #CCDB4A;
+$light-color--bg: #F5F8DB;
+$light-color--hover: #A6B42F;
+
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+
+// grid
+
+$width: 96%;
+$gutter: 4%;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+
+// Header
+$header__height--desktop: 240px;
+$header__height--desktop--logo: 220px;
+$header__height--tablet: 200px;
+$header__height--tablet--logo: 180px;
+$header__height--mobile: 160px;
+$header__height--mobile--logo: 140px;
+$header__height: $header__height--mobile;
+$header__height--logo: $header__height--mobile--logo;
+
+
+
+
+/*
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+$color__text-main: #404040;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+*/
