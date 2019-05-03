@@ -1,13 +1,16 @@
 .owl-banners{
     background-color: $dark-color;
-    height: calc(100vh - #{$header__height});
-    @media screen and (min-width: $breakpoint-small) {
-        height: calc(100vh - #{$header__height--tablet});
+    height: calc(100vh / 3);
+    overflow: hidden;
+    @media screen and (orientation: landscape)   {
+        height: 100vh;
+    }
+    @media screen and (min-width: $breakpoint-small) and (orientation: portrait)   {
+        height: calc(100vh / 2);
     }
     @media screen and (min-width: $breakpoint-large) {
         height: calc(100vh - #{$header__height--desktop});
-    }
-    overflow: hidden;
+    } 
     *{
         color: #fff;
     }
@@ -24,10 +27,17 @@
 
 .entry-banner{
     position: absolute;
-    top: 10vh;
-    left: 20vh;
+    top: 10px;
+    left: 20px;
     p{
-      font-size: 40px;
+      font-size: 20px;
+    }
+    @media screen and (min-width: $breakpoint-large) {
+        top: 10vh;
+        left: 20vh;
+        p{
+          font-size: 40px;
+        }
     }
 }
 .owl-nav,

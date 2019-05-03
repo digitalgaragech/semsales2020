@@ -8,9 +8,11 @@
     letter-spacing: 1px;
 }
 .btn-big{
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size:16px;
+    @media screen and (min-width: $breakpoint-large) {
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size:16px;
+    }
 }
 .btn.btn-default{
     background-color: $dark-color;

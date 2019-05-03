@@ -3,9 +3,6 @@ header.site-header{
     display: grid;
     grid-template-columns: 300px auto;
     height:$header__height;
-    @media screen and (min-width: $breakpoint-small) {
-        height: $header__height--tablet;
-    }
     @media screen and (min-width: $breakpoint-large) {
         height: $header__height--desktop;
     }
@@ -15,15 +12,12 @@ header.site-header{
 .site-title,
 .site-description{
     position: absolute;
-    top: -300px;
+    top: -1000px;
 }
 .custom-logo-link{
 }
 .custom-logo{
     height: $header__height--mobile--logo;
-    @media screen and (min-width: $breakpoint-small) {
-        height: $header__height--tablet--logo;
-    }
     @media screen and (min-width: $breakpoint-large) {
         height: $header__height--desktop--logo;
     }
@@ -35,15 +29,16 @@ header.site-header{
     
 }
 .main-navigation{
-    height:$header__height;
+    display: flex;
     .menu-menu-1-container{
+        width: 100%;
         position: absolute;
         z-index: 2;
         top:$header__height;
         left: 0;
         background-color: $dark_color;
          li{
-            list-style-type: none;
+            float: none;
             padding: 20px;
             a{
                 font-weight: 700;
@@ -53,25 +48,20 @@ header.site-header{
                 color: $light-color
             }
         }
-        @media screen and (min-width: $breakpoint-small) {
-        background-color: transparent;
+        @media screen and (min-width: $breakpoint-large) {
+            background-color: transparent;
             position: static;
-            height: $header__height--tablet;
-            li{
+            height: $header__height--desktop;
+            display: flex;
+            align-items: center;
+             li{
+                list-style-type: none;
+                 float: left;
                 a{
                     color: $dark-color
                 }
             }
         }
-        @media screen and (min-width: $breakpoint-large) {
-            height: $header__height--desktop;
-            display: flex;
-            align-items: center;
-        }
-    }
-    @media screen and (min-width: $breakpoint-small) {
-        display: flex;
-
     }
 }
 
