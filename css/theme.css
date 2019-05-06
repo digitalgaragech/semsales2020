@@ -26,6 +26,7 @@ $color__border-abbr: #666;
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -38,6 +39,7 @@ $color__border-abbr: #666;
 .screen-reader-text:focus {
   background-color: #eee;
   clip: auto !important;
+  -webkit-clip-path: none;
   clip-path: none;
   color: #444;
   display: block;
@@ -80,6 +82,7 @@ a {
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
+      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
@@ -89,7 +92,8 @@ a {
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
@@ -111,18 +115,24 @@ a {
 @media screen and (min-width: 60em) {
   .menu-toggle {
     display: none; }
-
   .main-navigation ul {
     display: block; } }
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
+
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
-.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
   float: left;
   width: 50%; }
-.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%; }
@@ -240,82 +250,73 @@ p {
   width: 96%; }
 
 .col-1-sm {
-  width: 4.3333333333%; }
+  width: 4.33333%; }
 
 .col-2-sm {
-  width: 12.6666666667%; }
+  width: 12.66667%; }
 
 .col-3-sm {
   width: 21%; }
 
 .col-4-sm {
-  width: 29.3333333333%; }
+  width: 29.33333%; }
 
 .col-5-sm {
-  width: 37.6666666667%; }
+  width: 37.66667%; }
 
 .col-6-sm {
   width: 46%; }
 
 .col-7-sm {
-  width: 54.3333333333%; }
+  width: 54.33333%; }
 
 .col-8-sm {
-  width: 62.6666666667%; }
+  width: 62.66667%; }
 
 .col-9-sm {
   width: 71%; }
 
 .col-10-sm {
-  width: 79.3333333333%; }
+  width: 79.33333%; }
 
 .col-11-sm {
-  width: 87.6666666667%; }
+  width: 87.66667%; }
 
 .col-12-sm {
   width: 96%; }
 
 @media only screen and (min-width: 45em) {
   .col-1 {
-    width: 4.3333333333%; }
-
+    width: 4.33333%; }
   .col-2 {
-    width: 12.6666666667%; }
-
+    width: 12.66667%; }
   .col-3 {
     width: 21%; }
-
   .col-4 {
-    width: 29.3333333333%; }
-
+    width: 29.33333%; }
   .col-5 {
-    width: 37.6666666667%; }
-
+    width: 37.66667%; }
   .col-6 {
     width: 46%; }
-
   .col-7 {
-    width: 54.3333333333%; }
-
+    width: 54.33333%; }
   .col-8 {
-    width: 62.6666666667%; }
-
+    width: 62.66667%; }
   .col-9 {
     width: 71%; }
-
   .col-10 {
-    width: 79.3333333333%; }
-
+    width: 79.33333%; }
   .col-11 {
-    width: 87.6666666667%; }
-
+    width: 87.66667%; }
   .col-12 {
     width: 96%; }
-
   .hidden-sm {
     display: block; } }
+
 header.site-header {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 300px auto;
   grid-template-columns: 300px auto;
   height: 160px;
   overflow: hidden; }
@@ -338,6 +339,8 @@ header.site-header {
       height: 220px; } }
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
   .main-navigation .menu-menu-1-container {
     width: 100%;
@@ -360,7 +363,11 @@ header.site-header {
         background-color: transparent;
         position: static;
         height: 240px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center; }
         .main-navigation .menu-menu-1-container li {
           list-style-type: none;
@@ -413,8 +420,14 @@ header.site-header {
   padding-bottom: 60px; }
   #events .img-placeholder {
     background-color: #CCDB4A;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 300px;
     width: 100%;
