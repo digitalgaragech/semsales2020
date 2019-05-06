@@ -98,47 +98,59 @@ get_header();
                 endif;
               ?>
             </div>
+            <a class="center btn btn-big btn-outline" href="/programme">Voir le programme complet</a>
         </div>
 	</section>
 
 	<section id="quotes">
+        <div class="container">
+            <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Quote')->term_id ); ?></h2>
+            <div class="owl-carousel owl-quotes owl-theme">
+            <?php
+                $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+                $args = array(
+                    'post_type' => 'post',
+                    'category_name' => 'Quote',
+                    'posts_per_page' => 5,
+                    'paged' => $paged,
+            );
+            $arr_posts = new WP_Query( $args );
 
-			<div class="owl-carousel owl-quotes owl-theme">
-			<?php
-				$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-				$args = array(
-						'post_type' => 'post',
-						'category_name' => 'Quote',
-						'posts_per_page' => 5,
-						'paged' => $paged,
-				);
-				$arr_posts = new WP_Query( $args );
 
-
-				if ( $arr_posts->have_posts() ) :
-
-						while ( $arr_posts->have_posts() ) :
-								$arr_posts->the_post();
-								?>
-								<div id="post-<?php the_ID(); ?>" class="item">
-										<?php
-										if ( has_post_thumbnail() ) :
-												the_post_thumbnail();
-										endif;
-										?>
-										<header class="entry-header">
-												<h1 class="entry-title"><?php the_title(); ?></h1>
-										</header>
-										<div class="entry-content">
-												<?php the_excerpt(); ?>
-												<a href="<?php the_permalink(); ?>">En savoir plus</a>
-										</div>
-								</div>
-								<?php
-						endwhile;
-				endif;
-			?>
-			</div>
+                if ( $arr_posts->have_posts() ) :
+                    while ( $arr_posts->have_posts() ) :
+                        $arr_posts->the_post();
+                        ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <div id="post-<?php the_ID(); ?>" class="item quote__item">
+                               <div class="quote__item--img">
+                                <?php
+                                if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail();
+                                }
+                                else {
+                                    echo '<div class="img-placeholder">nopic</div>';
+                                }
+                                ?>
+                                </div>
+                                <div class="quote__item--texts">
+                                    <header class="entry-header">
+                                            <h1 class="entry-title"></h1>
+                                    </header>
+                                    <div class="entry-content">
+                                                <?php the_excerpt(); ?>
+                                                <?php the_title(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <?php
+                    endwhile;
+                endif;
+            ?>
+            </div>
+            <a class="center btn btn-big btn-outline" href="/arbracadabrant">Plus sur Arbracadabrant</a>
+        </div>
 	</section>
 		<section id="Edelweiss">
 
