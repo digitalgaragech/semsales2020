@@ -135,11 +135,10 @@ get_header();
                                 </div>
                                 <div class="quote__item--texts">
                                     <header class="entry-header">
-                                            <h1 class="entry-title"></h1>
                                     </header>
                                     <div class="entry-content">
-                                                <?php the_excerpt(); ?>
-                                                <?php the_title(); ?>
+                                        <?php the_excerpt(); ?>
+                                        <strong><?php the_title(); ?></strong>
                                     </div>
                                 </div>
                             </div>
@@ -149,7 +148,7 @@ get_header();
                 endif;
             ?>
             </div>
-            <a class="center btn btn-big btn-outline" href="/arbracadabrant">Plus sur Arbracadabrant</a>
+            <a class="center btn btn-big btn-outline" href="/arbracadabrant">Tout savoir sur Arbracadabrant</a>
         </div>
 	</section>
 		<section id="Edelweiss">
