@@ -544,3 +544,7 @@ header.site-header {
   display: grid;
   -ms-grid-columns: 50% auto;
   grid-template-columns: 50% auto; }
+  .content.horizontal__block h4, .content.horizontal__block p {
+    color: #fff; }
+  .content__content {
+    margin: 0 40px; }
