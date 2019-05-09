@@ -8,20 +8,9 @@
 @import 'base';
 @import '../sass/navigation/navigation';
 @import 'simple-grid';
+@import 'buttons';
 @import 'header';
 @import 'carousel';
 @import 'events';
 @import 'quotes';
-@import 'buttons';
-
-body{
-    background-color: #eee;
-} 
-img{
-    max-width: 100%;
-    height: auto;
-}
-.section-heading{
-    padding:60px;
-    margin: 0;
-}
+@import 'content';

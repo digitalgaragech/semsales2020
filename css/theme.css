@@ -54,6 +54,17 @@ $color__border-abbr: #666;
   z-index: 100000;
   /* Above WP toolbar. */ }
 
+body {
+  background-color: #eee; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.section-heading {
+  padding: 60px;
+  margin: 0; }
+
 b, strong {
   font-weight: 700; }
 
@@ -316,6 +327,46 @@ p {
   .hidden-sm {
     display: block; } }
 
+.btn {
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 20px;
+  letter-spacing: 1px; }
+  .btn.center {
+    display: table; }
+
+@media screen and (min-width: 60em) {
+  .btn-big {
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px; } }
+
+.btn.btn-default {
+  background-color: #2A0F76;
+  color: #fff; }
+  .btn.btn-default:hover {
+    background-color: #1b094e;
+    color: #fff; }
+
+.btn.btn-white {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff; }
+  .btn.btn-white:hover {
+    background-color: #2A0F76;
+    color: #fff; }
+
+.btn.btn-outline {
+  background-color: transparent;
+  color: #2A0F76;
+  border: 2px solid #2A0F76; }
+  .btn.btn-outline:hover {
+    background-color: #2A0F76;
+    color: #fff; }
+
 header.site-header {
   display: -ms-grid;
   display: grid;
@@ -486,53 +537,7 @@ header.site-header {
         font-weight: 300;
         font-style: italic; }
 
-.btn {
-  padding: 10px 20px;
-  font-weight: 700;
-  font-size: 11px;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 20px;
-  letter-spacing: 1px; }
-  .btn.center {
-    display: table; }
-
-@media screen and (min-width: 60em) {
-  .btn-big {
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 16px; } }
-
-.btn.btn-default {
-  background-color: #2A0F76;
-  color: #fff; }
-  .btn.btn-default:hover {
-    background-color: #1b094e;
-    color: #fff; }
-
-.btn.btn-white {
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff; }
-  .btn.btn-white:hover {
-    background-color: #2A0F76;
-    color: #fff; }
-
-.btn.btn-outline {
-  background-color: transparent;
-  color: #2A0F76;
-  border: 2px solid #2A0F76; }
-  .btn.btn-outline:hover {
-    background-color: #2A0F76;
-    color: #fff; }
-
-body {
-  background-color: #eee; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-.section-heading {
-  padding: 60px;
-  margin: 0; }
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

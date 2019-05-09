@@ -151,7 +151,6 @@ get_header();
         </div>
 	</section>
 		<section id="Edelweiss">
-
 				<?php
 					$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 					$args = array(
@@ -161,19 +160,19 @@ get_header();
 							'paged' => $paged,
 					);
 					$arr_posts = new WP_Query( $args );
-
-
 					if ( $arr_posts->have_posts() ) :
-
 							while ( $arr_posts->have_posts() ) :
 									$arr_posts->the_post();
 									?>
-									<div id="post-<?php the_ID(); ?>">
+									<div id="post-<?php the_ID(); ?>" class="content horizontal__block">
+										<div class="content__img">
 											<?php
 											if ( has_post_thumbnail() ) :
 													the_post_thumbnail();
 											endif;
 											?>
+										</div>
+										<div class="content__content">
 											<header class="entry-header">
 													<h1 class="entry-title"><?php the_title(); ?></h1>
 											</header>
@@ -182,6 +181,7 @@ get_header();
 													<a href="<?php the_permalink(); ?>">En savoir plus</a>
 											</div>
 									</div>
+							</div>
 									<?php
 							endwhile;
 					endif;

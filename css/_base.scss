@@ -28,6 +28,17 @@
   width: auto;
   z-index: 100000; /* Above WP toolbar. */
 }
+body{
+    background-color: #eee;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.section-heading{
+    padding:60px;
+    margin: 0;
+}
 b, strong{
     font-weight: $font-weight-heavy
 }
