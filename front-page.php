@@ -174,7 +174,7 @@ get_header();
 										</div>
 										<div class="content__content">
 											<header class="entry-header">
-													<h1 class="entry-title"><?php the_title(); ?></h1>
+													<h4 class="entry-title"><?php the_title(); ?></h4>
 											</header>
 											<div class="entry-content">
 													<?php the_excerpt(); ?>
