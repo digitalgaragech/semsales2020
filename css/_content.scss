@@ -1,6 +1,8 @@
 .content{
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% auto;
   &.horizontal__block{
+    fle
     img{
 
     }
