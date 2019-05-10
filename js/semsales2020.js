@@ -54,7 +54,7 @@ jQuery(document).ready(function () {
     }
     sponsorsCounter();
 
-    const divsContents = [...document.querySelectorAll("#sponsors > div")].map(e=>e.innerHTML);
+    const divsContents = [...document.querySelectorAll("#sponsors > div")].map(e=>e.id);
     console.log(divsContents);
 
 
