@@ -50,7 +50,7 @@ jQuery(document).ready(function () {
         }
     });
     function sponsorsCounter(){
-      console.log(jQuery("#sponsors > div").length;
+      console.log(jQuery("#sponsors > div").length);
     }
     sponsorsCounter();
 });
