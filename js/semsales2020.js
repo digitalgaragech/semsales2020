@@ -55,7 +55,8 @@ jQuery(document).ready(function () {
     sponsorsCounter();
 
     const divsContents = [...document.querySelectorAll("#sponsors > div")].map(e=>e.id);
-    
+
+    console.log(divsContents);
 
     for (var value of divsContents) {
       console.log(value);
