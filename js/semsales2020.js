@@ -49,5 +49,8 @@ jQuery(document).ready(function () {
             }
         }
     });
-
+    function sponsorsCounter(){
+      console.log($("#sponsors > div").length());
+    }
+    sponsorsCounter();
 });
