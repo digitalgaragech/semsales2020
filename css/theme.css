@@ -538,6 +538,9 @@ header.site-header {
         font-weight: 300;
         font-style: italic; }
 
+#sponsors .sponsors__img {
+  max-width: 200px; }
+
 #sponsors .shape-square {
   width: 100px;
   height: 100px;
