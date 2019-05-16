@@ -150,18 +150,20 @@ get_header();
             <a class="center btn btn-big btn-outline" href="/arbracadabrant">Tout savoir sur Arbracadabrant</a>
         </div>
 	</section>
+	<?php
+		$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+		$args = array(
+				'post_type' => 'post',
+				'category_name' => 'Edelweiss',
+				'posts_per_page' => 5,
+				'paged' => $paged,
+		);
+		$arr_posts = new WP_Query( $args );
+		if ( $arr_posts->have_posts() ) {
+			?>
 		<section id="edelweiss">
-				<?php
-					$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-					$args = array(
-							'post_type' => 'post',
-							'category_name' => 'Edelweiss',
-							'posts_per_page' => 5,
-							'paged' => $paged,
-					);
-					$arr_posts = new WP_Query( $args );
-					if ( $arr_posts->have_posts() ) :
-							while ( $arr_posts->have_posts() ) :
+						<?php
+							while ( $arr_posts->have_posts() ) {
 									$arr_posts->the_post();
 									?>
 									<div id="post-<?php the_ID(); ?>" class="content horizontal__block">
@@ -182,48 +184,54 @@ get_header();
 											</div>
 									</div>
 							</div>
-									<?php
-							endwhile;
-					endif;
-				?>
+						<?php
+						} // end while
+			?>
 		</section>
+		<?php
+	} // end if
+?>
+			<?php
+				$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+				$args = array(
+						'post_type' => 'post',
+						'category_name' => 'Sponsors',
+						'posts_per_page' => 5,
+						'paged' => $paged,
+				);
+				$arr_posts = new WP_Query( $args );
+				if ( $arr_posts->have_posts() ) {
+			?>
 			<section id="sponsors">
 				<h2 class="center section-heading">Sponsors</h2>
 					<section class="sponsors__container">
-					<?php
-						$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-						$args = array(
-								'post_type' => 'post',
-								'category_name' => 'Sponsors',
-								'posts_per_page' => 5,
-								'paged' => $paged,
-						);
-						$arr_posts = new WP_Query( $args );
-						if ( $arr_posts->have_posts() ) :
-								while ( $arr_posts->have_posts() ) :
-										$arr_posts->the_post();
-										?>
-										<div id="post-<?php the_ID(); ?>" class="sponsors__img">
-												<?php
-												if ( has_post_thumbnail() ) :
-														the_post_thumbnail();
-												endif;
-												?>
-												<!--<div class="content__content">
-													<header class="entry-header">
-															<h4 class="entry-title"><?php the_title(); ?></h4>
-													</header>
-													<div class="entry-content">
-															<?php the_excerpt(); ?>
-															<a href="<?php the_permalink(); ?>">En savoir plus</a>
-													</div>
-											</div>-->
-										</div>
-										<?php
-								endwhile;
-						endif;
+						<?php
+							while ( $arr_posts->have_posts() ) {
+									$arr_posts->the_post();
+									?>
+									<div id="post-<?php the_ID(); ?>" class="sponsors__img">
+											<?php
+											if ( has_post_thumbnail() ) :
+													the_post_thumbnail();
+											endif;
+											?>
+											<!--<div class="content__content">
+												<header class="entry-header">
+														<h4 class="entry-title"><?php the_title(); ?></h4>
+												</header>
+												<div class="entry-content">
+														<?php the_excerpt(); ?>
+														<a href="<?php the_permalink(); ?>">En savoir plus</a>
+												</div>
+										</div>-->
+									</div>
+								<?php
+								} // end while
 					?>
 			</section>
+			<?php
+		} // end if
+?>
 
 <?php
 get_sidebar();
