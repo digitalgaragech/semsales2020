@@ -51,19 +51,5 @@ jQuery(document).ready(function () {
             }
         }
     });
-    function sponsorsCounter(){
-      console.log(jQuery("#sponsors > div").length);
-    }
-    sponsorsCounter();
-
-    const divsContents = [...document.querySelectorAll("#sponsors > div")].map(e=>e.id);
-
-    console.log(divsContents);
-    if(divsContents.length < 6){
-    }
-
-    for (var value of divsContents) {
-      console.log(value);
-    }
 
 });

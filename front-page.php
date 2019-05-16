@@ -188,6 +188,7 @@ get_header();
 				?>
 		</section>
 			<section id="sponsors">
+				<h2 class="center section-heading">Sponsors</h2>
 					<?php
 						$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 						$args = array(
