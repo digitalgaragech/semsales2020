@@ -490,7 +490,8 @@ header.site-header {
       left: 20vh;
       width: calc(100% - 40vh); }
       .entry-banner p {
-        font-size: 40px; } }
+        font-size: 20px;
+        padding-top: 20px; } }
 
 .owl-theme .owl-nav,
 .owl-theme .owl-dots {
