@@ -14,24 +14,25 @@
 
 get_header();
 ?>
+<?php
+	$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+	$args = array(
+			'post_type' => 'post',
+			'category_name' => 'Banner',
+			'posts_per_page' => 5,
+			'paged' => $paged,
+	);
+	$arr_posts = new WP_Query( $args );
+
+
+	if ( $arr_posts->have_posts() ) { ?>
 <section id="hero">
 	<div class="owl-carousel owl-banners owl-theme">
-  <?php
-    $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-    $args = array(
-        'post_type' => 'post',
-        'category_name' => 'Banner',
-        'posts_per_page' => 5,
-        'paged' => $paged,
-    );
-    $arr_posts = new WP_Query( $args );
 
-
-    if ( $arr_posts->have_posts() ) :
-
-        while ( $arr_posts->have_posts() ) :
-            $arr_posts->the_post();
-            ?>
+									<?php
+										while ( $arr_posts->have_posts() ) {
+												$arr_posts->the_post();
+												?>
             <div id="post-<?php the_ID(); ?>" class="item">
                 <img class="owl-lazy" data-src="<?php
                 if ( has_post_thumbnail() ) :
@@ -48,33 +49,36 @@ get_header();
                     </div>
                 </div>
             </div>
-            <?php
-        endwhile;
-    endif;
-  ?>
-</div>
-</section>
+					</div>
+				<?php
+				} // end while
+				?>
+				</section>
+				<?php
+				} // end if
+				?>
+				<?php
+					$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+					$args = array(
+							'post_type' => 'post',
+							'category_name' => 'Event',
+							'posts_per_page' => 5,
+							'paged' => $paged,
+					);
+					$arr_posts = new WP_Query( $args );
+
+
+
+					if ( $arr_posts->have_posts() ) { ?>
 	<section id="events">
         <div class="container">
             <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Event')->term_id ); ?></h2>
 			<div class="owl-carousel owl-events owl-theme ">
-              <?php
-                $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-                $args = array(
-                    'post_type' => 'post',
-                    'category_name' => 'Event',
-                    'posts_per_page' => 5,
-                    'paged' => $paged,
-                );
-                $arr_posts = new WP_Query( $args );
 
-
-
-                if ( $arr_posts->have_posts() ) :
-
-                    while ( $arr_posts->have_posts() ) :
-                        $arr_posts->the_post();
-                        ?>
+															<?php
+																while ( $arr_posts->have_posts() ) {
+																		$arr_posts->the_post();
+																		?>
                         <div id="post-<?php the_ID(); ?>" class="item">
                            <?php
                             if ( has_post_thumbnail() ) {
@@ -98,28 +102,34 @@ get_header();
               ?>
             </div>
             <a class="center btn btn-big btn-outline" href="/programme">Voir le programme complet</a>
-        </div>
-	</section>
+					</div>
+				<?php
+				} // end while
+	?>
+</section>
+<?php
+} // end if
+?>
+	<?php
+			$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+			$args = array(
+					'post_type' => 'post',
+					'category_name' => 'Quote',
+					'posts_per_page' => 5,
+					'paged' => $paged,
+	);
+	$arr_posts = new WP_Query( $args );
 
+
+			if ( $arr_posts->have_posts() ) { ?>
 	<section id="quotes">
         <div class="container">
             <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Quote')->term_id ); ?></h2>
             <div class="owl-carousel owl-quotes owl-theme">
-            <?php
-                $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-                $args = array(
-                    'post_type' => 'post',
-                    'category_name' => 'Quote',
-                    'posts_per_page' => 5,
-                    'paged' => $paged,
-            );
-            $arr_posts = new WP_Query( $args );
-
-
-                if ( $arr_posts->have_posts() ) :
-                    while ( $arr_posts->have_posts() ) :
-                        $arr_posts->the_post();
-                        ?>
+												<?php
+													while ( $arr_posts->have_posts() ) {
+															$arr_posts->the_post();
+															?>
                         <a href="<?php the_permalink(); ?>">
                             <div id="post-<?php the_ID(); ?>" class="item quote__item">
                                <div class="quote__item--img">
@@ -148,8 +158,14 @@ get_header();
             ?>
             </div>
             <a class="center btn btn-big btn-outline" href="/arbracadabrant">Tout savoir sur Arbracadabrant</a>
-        </div>
-	</section>
+					</div>
+				<?php
+				} // end while
+	?>
+</section>
+<?php
+} // end if
+?>
 	<?php
 		$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 		$args = array(
