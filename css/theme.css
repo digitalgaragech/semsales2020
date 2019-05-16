@@ -561,7 +561,10 @@ header.site-header {
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .sponsors__container .sponsors__img {
     margin: 10px;
     max-width: 200px;
