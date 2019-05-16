@@ -2,7 +2,8 @@ jQuery(document).ready(function () {
     jQuery('.owl-banners').owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
+        nav: false,
+        dots: true,
         lazyLoad: true,
         responsive: {
             0: {
@@ -20,7 +21,8 @@ jQuery(document).ready(function () {
     jQuery('.owl-events').owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
+        nav: false,
+        dots: true,
         responsive: {
             0: {
                 items: 1
@@ -57,10 +59,11 @@ jQuery(document).ready(function () {
     const divsContents = [...document.querySelectorAll("#sponsors > div")].map(e=>e.id);
 
     console.log(divsContents);
+    if(divsContents.length < 6){
+    }
 
     for (var value of divsContents) {
       console.log(value);
     }
-
 
 });
