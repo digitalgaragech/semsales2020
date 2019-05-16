@@ -68,10 +68,7 @@ img {
 b, strong {
   font-weight: 700; }
 
-.owl-theme .owl-controls .owl-page {
-  display: inline-block; }
-
-.owl-theme .owl-controls .owl-page span {
+.owl-theme .owl-dot span {
   background: none repeat scroll 0 0 #869791;
   border-radius: 20px;
   display: block;
