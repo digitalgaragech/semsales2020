@@ -69,7 +69,7 @@ get_header();
 
 
 
-					if ( $arr_posts->have_posts() ) }{ ?>
+					if ( $arr_posts->have_posts() ) { ?>
 	<section id="events">
         <div class="container">
             <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Event')->term_id ); ?></h2>
