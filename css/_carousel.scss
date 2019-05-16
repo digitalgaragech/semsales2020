@@ -10,7 +10,7 @@
     }
     @media screen and (min-width: $breakpoint-large) {
         height: calc(100vh - #{$header__height--desktop});
-    } 
+    }
     *{
         color: #fff;
     }
@@ -40,8 +40,27 @@
         }
     }
 }
-.owl-nav,
-.owl-dots{
-    position: relative;
-    z-index: 10;
+.owl-theme {
+  .owl-nav,
+  .owl-dots{
+      position: relative;
+      z-index: 10;
+  }
+  .owl-dots{
+    text-align: center;
+    .owl-dot {
+      span {
+        background: none repeat scroll 0 0 #869791;
+        border-radius: 20px;
+        display: block;
+        height: 12px;
+        margin: 5px 7px;
+        opacity: 0.5;
+        width: 12px;
+      }
+      &.active span{
+        background: none repeat scroll 0 0 $dark-color;
+      }
+    }
+  }
 }

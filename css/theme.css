@@ -68,15 +68,6 @@ img {
 b, strong {
   font-weight: 700; }
 
-.owl-theme .owl-dot span {
-  background: none repeat scroll 0 0 #869791;
-  border-radius: 20px;
-  display: block;
-  height: 12px;
-  margin: 5px 7px;
-  opacity: 0.5;
-  width: 12px; }
-
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
@@ -474,10 +465,23 @@ header.site-header {
       .entry-banner p {
         font-size: 40px; } }
 
-.owl-nav,
-.owl-dots {
+.owl-theme .owl-nav,
+.owl-theme .owl-dots {
   position: relative;
   z-index: 10; }
+
+.owl-theme .owl-dots {
+  text-align: center; }
+  .owl-theme .owl-dots .owl-dot span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px; }
+  .owl-theme .owl-dots .owl-dot.active span {
+    background: none repeat scroll 0 0 #2A0F76; }
 
 #events {
   background-color: #F5F8DB;
