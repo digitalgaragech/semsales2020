@@ -14,25 +14,24 @@
 
 get_header();
 ?>
-<?php
-	$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-	$args = array(
-			'post_type' => 'post',
-			'category_name' => 'Banner',
-			'posts_per_page' => 5,
-			'paged' => $paged,
-	);
-	$arr_posts = new WP_Query( $args );
-
-
-	if ( $arr_posts->have_posts() ) { ?>
 <section id="hero">
 	<div class="owl-carousel owl-banners owl-theme">
+  <?php
+    $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+    $args = array(
+        'post_type' => 'post',
+        'category_name' => 'Banner',
+        'posts_per_page' => 5,
+        'paged' => $paged,
+    );
+    $arr_posts = new WP_Query( $args );
 
-									<?php
-										while ( $arr_posts->have_posts() ) {
-												$arr_posts->the_post();
-												?>
+
+    if ( $arr_posts->have_posts() ) :
+
+        while ( $arr_posts->have_posts() ) :
+            $arr_posts->the_post();
+            ?>
             <div id="post-<?php the_ID(); ?>" class="item">
                 <img class="owl-lazy" data-src="<?php
                 if ( has_post_thumbnail() ) :
@@ -49,14 +48,12 @@ get_header();
                     </div>
                 </div>
             </div>
-					</div>
-				<?php
-				} // end while
-				?>
-				</section>
-				<?php
-				} // end if
-				?>
+            <?php
+        endwhile;
+    endif;
+  ?>
+</div>
+</section>
 				<?php
 					$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 					$args = array(
