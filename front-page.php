@@ -14,24 +14,25 @@
 
 get_header();
 ?>
+<?php
+	$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+	$args = array(
+			'post_type' => 'post',
+			'category_name' => 'Banner',
+			'posts_per_page' => 5,
+			'paged' => $paged,
+	);
+	$arr_posts = new WP_Query( $args );
+
+
+	if ( $arr_posts->have_posts() ) {
+		?>
 <section id="hero">
 	<div class="owl-carousel owl-banners owl-theme">
-  <?php
-    $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-    $args = array(
-        'post_type' => 'post',
-        'category_name' => 'Banner',
-        'posts_per_page' => 5,
-        'paged' => $paged,
-    );
-    $arr_posts = new WP_Query( $args );
-
-
-    if ( $arr_posts->have_posts() ) :
-
-        while ( $arr_posts->have_posts() ) :
-            $arr_posts->the_post();
-            ?>
+			<?php
+				while ( $arr_posts->have_posts() ) {
+						$arr_posts->the_post();
+						?>
             <div id="post-<?php the_ID(); ?>" class="item">
                 <img class="owl-lazy" data-src="<?php
                 if ( has_post_thumbnail() ) :
@@ -48,12 +49,14 @@ get_header();
                     </div>
                 </div>
             </div>
-            <?php
-        endwhile;
-    endif;
-  ?>
+					<?php
+					} // end while
+		?>
 </div>
 </section>
+<?php
+} // end if
+?>
 				<?php
 					$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 					$args = array(
@@ -66,7 +69,7 @@ get_header();
 
 
 
-					if ( $arr_posts->have_posts() ) { ?>
+					if ( $arr_posts->have_posts() ) }{ ?>
 	<section id="events">
         <div class="container">
             <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Event')->term_id ); ?></h2>
@@ -93,20 +96,17 @@ get_header();
                                 <a class="btn btn-default" href="<?php the_permalink(); ?>">En savoir plus</a>
                             </div>
                         </div>
-                        <?php
-                    endwhile;
-                endif;
-              ?>
+											<?php
+											} // end while
+								?>
             </div>
             <a class="center btn btn-big btn-outline" href="/programme">Voir le programme complet</a>
-					</div>
-				<?php
-				} // end while
+        </div>
+	</section>
+
+	<?php
+	} // end if
 	?>
-</section>
-<?php
-} // end if
-?>
 	<?php
 			$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 			$args = array(
@@ -149,20 +149,16 @@ get_header();
                                 </div>
                             </div>
                         </a>
-                        <?php
-                    endwhile;
-                endif;
-            ?>
+											<?php
+											} // end while
+								?>
             </div>
             <a class="center btn btn-big btn-outline" href="/arbracadabrant">Tout savoir sur Arbracadabrant</a>
-					</div>
-				<?php
-				} // end while
+        </div>
+			</section>
+	<?php
+	} // end if
 	?>
-</section>
-<?php
-} // end if
-?>
 	<?php
 		$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 		$args = array(
