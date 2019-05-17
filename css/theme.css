@@ -61,13 +61,13 @@ blockquote {
   background-color: #2A0F76;
   background-color: #2A0F76;
   color: #fff;
-  margin: 0 0 1rem;
+  margin: 1rem 0;
   padding: 5% 10%;
   border-radius: 3px; }
   blockquote p, blockquote em {
     color: #fff; }
 
-blockquote:before {
+blockquote:after {
   height: 1rem;
   width: 1rem;
   background-color: #CCDB4A; }
