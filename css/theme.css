@@ -62,7 +62,11 @@ blockquote, pre {
   page-break-inside: avoid; }
 
 blockquote {
-  margin: 0 0 1rem; }
+  margin: 0 0 1rem;
+  padding: 1rem; }
+
+blockquote::before {
+  content: "\2014 \00A0"; }
 
 img {
   max-width: 100%;
