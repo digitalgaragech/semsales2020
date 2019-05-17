@@ -57,6 +57,13 @@ $color__border-abbr: #666;
 body {
   background-color: #eee; }
 
+blockquote, pre {
+  border: 1px solid #adb5bd;
+  page-break-inside: avoid; }
+
+blockquote {
+  margin: 0 0 1rem; }
+
 img {
   max-width: 100%;
   height: auto; }
