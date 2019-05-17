@@ -37,6 +37,11 @@ blockquote {
   color: #fff;
   margin: 0 0 1rem;
   padding:1rem;
+  border-radius: $border-radius--small;
+  p,em{
+    color: #fff;
+    font-weight:$font-weight-heavy;
+  }
 }
 blockquote::before {
   height: 1rem;
