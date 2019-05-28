@@ -62,7 +62,7 @@ get_header();
 					$args = array(
 							'post_type' => 'post',
 							'category_name' => 'Event',
-							'posts_per_page' => 5,
+							'posts_per_page' => 2,
 							'paged' => $paged,
 					);
 					$arr_posts = new WP_Query( $args );
@@ -75,10 +75,10 @@ get_header();
             <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Event')->term_id ); ?></h2>
 			<div class="owl-carousel owl-events owl-theme ">
 
-															<?php
-																while ( $arr_posts->have_posts() ) {
-																		$arr_posts->the_post();
-																		?>
+								<?php
+									while ( $arr_posts->have_posts() ) {
+											$arr_posts->the_post();
+											?>
                         <div id="post-<?php the_ID(); ?>" class="item">
                            <?php
                             if ( has_post_thumbnail() ) {
