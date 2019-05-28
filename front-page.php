@@ -39,7 +39,7 @@ get_header();
                     the_post_thumbnail_url();
                 endif;
                 ?>">
-                <div class="entry-banner">
+                <div class="entry-banner container">
                     <header class="entry-header">
                         <h1 class="entry-title"><?php the_title(); ?></h1>
                         <?php the_excerpt(); ?>
