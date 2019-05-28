@@ -34,14 +34,14 @@
     p{
       font-size: 20px;
     }
-    @media screen and (min-width: $breakpoint-large) {
+    @media screen and (min-width: $breakpoint-med) {
         top: 10vh;
         p{
           font-size: 20px;
           padding-top: 20px;
         }
     }
-    @media screen and (min-width: $breakpoint-xlarge) {
+    @media screen and (min-width: $breakpoint-large) {
         top: 20vh;
         h1{
           font-size: 3.6rem;
