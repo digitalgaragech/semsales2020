@@ -244,7 +244,10 @@ p {
   width: calc(100% - 40px);
   padding: 0 20px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  -webkit-transition: width .5s ease-in-out;
+  -o-transition: width .5s ease-in-out;
+  transition: width .5s ease-in-out; }
   @media only screen and (min-width: 60em) {
     .container {
       max-width: 1440px;
