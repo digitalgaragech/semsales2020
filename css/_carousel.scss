@@ -41,6 +41,15 @@
           padding-top: 20px;
         }
     }
+    @media screen and (min-width: $breakpoint-large) {
+        top: 20vh;
+        h1{
+          font-size: 36px;
+        }
+        p{
+          font-size: 28px;
+        }
+    }
 }
 .owl-theme {
   .owl-nav,

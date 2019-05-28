@@ -510,6 +510,13 @@ header.site-header {
       .entry-banner p {
         font-size: 20px;
         padding-top: 20px; } }
+  @media screen and (min-width: 60em) {
+    .entry-banner {
+      top: 20vh; }
+      .entry-banner h1 {
+        font-size: 36px; }
+      .entry-banner p {
+        font-size: 28px; } }
 
 .owl-theme .owl-nav,
 .owl-theme .owl-dots {
