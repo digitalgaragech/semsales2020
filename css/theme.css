@@ -510,7 +510,7 @@ header.site-header {
       .entry-banner p {
         font-size: 20px;
         padding-top: 20px; } }
-  @media screen and (min-width: 60em) {
+  @media screen and (min-width: 90em) {
     .entry-banner {
       top: 20vh; }
       .entry-banner h1 {
