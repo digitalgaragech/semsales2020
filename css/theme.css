@@ -500,7 +500,7 @@ header.site-header {
     margin: 40px 0; }
 
 .entry-banner {
-  position: absolute;
+  position: relative;
   top: 10px; }
   .entry-banner p {
     font-size: 20px; }
