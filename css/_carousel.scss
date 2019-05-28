@@ -1,15 +1,18 @@
 .owl-banners{
     background-color: $dark-color;
-    height: calc(100vh / 3);
     overflow: hidden;
-    @media screen and (orientation: landscape)   {
-        height: 100vh;
-    }
-    @media screen and (min-width: $breakpoint-small) and (orientation: portrait)   {
-        height: calc(100vh / 2);
-    }
-    @media screen and (min-width: $breakpoint-large) {
-        height: calc(100vh - #{$header__height--desktop});
+    .owl-item{
+      
+      height: calc(100vh / 3);
+      @media screen and (orientation: landscape)   {
+          height: 100vh;
+      }
+      @media screen and (min-width: $breakpoint-small) and (orientation: portrait)   {
+          height: calc(100vh / 2);
+      }
+      @media screen and (min-width: $breakpoint-large) {
+          height: calc(100vh - #{$header__height--desktop});
+      }
     }
     *{
         color: #fff;

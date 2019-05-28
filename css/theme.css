@@ -472,17 +472,18 @@ header.site-header {
 
 .owl-banners {
   background-color: #2A0F76;
-  height: calc(100vh / 3);
   overflow: hidden; }
-  @media screen and (orientation: landscape) {
-    .owl-banners {
-      height: 100vh; } }
-  @media screen and (min-width: 33.75em) and (orientation: portrait) {
-    .owl-banners {
-      height: calc(100vh / 2); } }
-  @media screen and (min-width: 60em) {
-    .owl-banners {
-      height: calc(100vh - 240px); } }
+  .owl-banners .owl-item {
+    height: calc(100vh / 3); }
+    @media screen and (orientation: landscape) {
+      .owl-banners .owl-item {
+        height: 100vh; } }
+    @media screen and (min-width: 33.75em) and (orientation: portrait) {
+      .owl-banners .owl-item {
+        height: calc(100vh / 2); } }
+    @media screen and (min-width: 60em) {
+      .owl-banners .owl-item {
+        height: calc(100vh - 240px); } }
   .owl-banners * {
     color: #fff; }
   .owl-banners a:hover {
