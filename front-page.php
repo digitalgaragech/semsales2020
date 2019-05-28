@@ -51,6 +51,7 @@ get_header();
             </div>
 					<?php
 					} // end while
+     			wp_reset_postdata();
 		?>
 </div>
 </section>
@@ -98,6 +99,7 @@ get_header();
                         </div>
 											<?php
 											} // end while
+						     			wp_reset_postdata();
 								?>
             </div>
             <a class="center btn btn-big btn-outline" href="/programme">Voir le programme complet</a>
@@ -151,6 +153,7 @@ get_header();
                         </a>
 											<?php
 											} // end while
+						     			wp_reset_postdata();
 								?>
             </div>
             <a class="center btn btn-big btn-outline" href="/arbracadabrant">Tout savoir sur Arbracadabrant</a>
@@ -195,6 +198,7 @@ get_header();
 							</div>
 						<?php
 						} // end while
+	     			wp_reset_postdata();
 			?>
 		</section>
 		<?php
@@ -236,6 +240,7 @@ get_header();
 									</div>
 								<?php
 								} // end while
+			     			wp_reset_postdata();
 					?>
 			</section>
 			<?php
