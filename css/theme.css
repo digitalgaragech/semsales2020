@@ -250,7 +250,7 @@ p {
   transition: width .5s ease-in-out; }
   @media only screen and (min-width: 60em) {
     .container {
-      max-width: 1440px;
+      max-width: 1200px;
       width: calc(100% - 200px);
       padding: 0 100px; } }
 
