@@ -15,17 +15,17 @@
 get_header();
 ?>
 <?php
-	$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-	$args = array(
+	$paged_hero = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+	$args_hero = array(
 			'post_type' => 'post',
 			'category_name' => 'Banner',
 			'posts_per_page' => 5,
-			'paged' => $paged,
+			'paged' => $paged_hero,
 	);
-	$arr_posts = new WP_Query( $args );
+	$arr_posts_hero = new WP_Query( $args_hero );
 
 
-	if ( $arr_posts->have_posts() ) {
+	if ( $arr_posts_hero->have_posts() ) {
 		?>
 <section id="hero">
 	<div class="owl-carousel owl-banners owl-theme">
@@ -51,7 +51,6 @@ get_header();
             </div>
 					<?php
 					} // end while
-     			wp_reset_postdata();
 		?>
 </div>
 </section>
@@ -59,18 +58,18 @@ get_header();
 } // end if
 ?>
 				<?php
-					$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-					$args = array(
+					$paged_events = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+					$args_events = array(
 							'post_type' => 'post',
 							'category_name' => 'Event',
 							'posts_per_page' => 2,
-							'paged' => $paged,
+							'paged' => $paged_events,
 					);
-					$arr_posts = new WP_Query( $args );
+					$arr_posts_events = new WP_Query( $args_events );
 
 
 
-					if ( $arr_posts->have_posts() ) { ?>
+					if ( $arr_posts_events->have_posts() ) { ?>
 	<section id="events">
         <div class="container">
             <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Event')->term_id ); ?></h2>
@@ -99,7 +98,6 @@ get_header();
                         </div>
 											<?php
 											} // end while
-						     			wp_reset_postdata();
 								?>
             </div>
             <a class="center btn btn-big btn-outline" href="/programme">Voir le programme complet</a>
@@ -110,17 +108,17 @@ get_header();
 	} // end if
 	?>
 	<?php
-			$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-			$args = array(
+			$paged_quotes = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+			$args_quotes = array(
 					'post_type' => 'post',
 					'category_name' => 'Quote',
 					'posts_per_page' => 5,
-					'paged' => $paged,
+					'paged' => $paged_quotes,
 	);
-	$arr_posts = new WP_Query( $args );
+	$arr_posts_quotes = new WP_Query( $args_quotes );
 
 
-			if ( $arr_posts->have_posts() ) { ?>
+			if ( $arr_posts_quotes->have_posts() ) { ?>
 	<section id="quotes">
         <div class="container">
             <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Quote')->term_id ); ?></h2>
@@ -163,15 +161,15 @@ get_header();
 	} // end if
 	?>
 	<?php
-		$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-		$args = array(
+		$paged_edelweiss = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+		$args_edelweiss = array(
 				'post_type' => 'post',
 				'category_name' => 'Edelweiss',
 				'posts_per_page' => 5,
-				'paged' => $paged,
+				'paged' => $paged_edelweiss,
 		);
-		$arr_posts = new WP_Query( $args );
-		if ( $arr_posts->have_posts() ) {
+		$arr_posts_edelweiss = new WP_Query( $args_edelweiss );
+		if ( $arr_posts_edelweiss->have_posts() ) {
 			?>
 		<section id="edelweiss">
 						<?php
@@ -205,15 +203,15 @@ get_header();
 	} // end if
 ?>
 			<?php
-				$paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-				$args = array(
+				$paged_sponsors = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+				$args_sponsors = array(
 						'post_type' => 'post',
 						'category_name' => 'Sponsors',
 						'posts_per_page' => 5,
-						'paged' => $paged,
+						'paged' => $paged_sponsors,
 				);
-				$arr_posts = new WP_Query( $args );
-				if ( $arr_posts->have_posts() ) {
+				$arr_posts_sponsors = new WP_Query( $args_sponsors );
+				if ( $arr_posts_sponsors->have_posts() ) {
 			?>
 			<section id="sponsors">
 				<h2 class="center section-heading">Sponsors</h2>
@@ -240,7 +238,7 @@ get_header();
 									</div>
 								<?php
 								} // end while
-			     			wp_reset_postdata();
+			     			remove_filter();
 					?>
 			</section>
 			<?php
