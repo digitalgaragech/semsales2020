@@ -2,7 +2,7 @@
     background-color: $dark-color;
     overflow: hidden;
     .owl-item{
-      
+
       height: calc(100vh / 3);
       @media screen and (orientation: landscape)   {
           height: 100vh;
@@ -31,15 +31,11 @@
 .entry-banner{
     position: absolute;
     top: 10px;
-    left: 20px;
-    width: calc(100% - 40px);
     p{
       font-size: 20px;
     }
     @media screen and (min-width: $breakpoint-large) {
         top: 10vh;
-        left: 20vh;
-        width: calc(100% - 40vh);
         p{
           font-size: 20px;
           padding-top: 20px;

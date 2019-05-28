@@ -501,16 +501,12 @@ header.site-header {
 
 .entry-banner {
   position: absolute;
-  top: 10px;
-  left: 20px;
-  width: calc(100% - 40px); }
+  top: 10px; }
   .entry-banner p {
     font-size: 20px; }
   @media screen and (min-width: 60em) {
     .entry-banner {
-      top: 10vh;
-      left: 20vh;
-      width: calc(100% - 40vh); }
+      top: 10vh; }
       .entry-banner p {
         font-size: 20px;
         padding-top: 20px; } }
