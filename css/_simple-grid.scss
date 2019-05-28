@@ -96,13 +96,15 @@ p {
   display: none;
 }
 
-
 .container {
-  width:100%;
+  width:calc(100% - 40px);
+  padding:0 20px;
   margin-left: auto;
   margin-right: auto;
   @media only screen and (min-width: $breakpoint-large) {
     max-width: 1440px;
+    width:calc(100% - 200px);
+    padding:0 100px;
   }
 }
 
