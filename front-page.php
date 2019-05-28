@@ -30,8 +30,8 @@ get_header();
 <section id="hero">
 	<div class="owl-carousel owl-banners owl-theme">
 			<?php
-				while ( $arr_posts->have_posts() ) {
-						$arr_posts->the_post();
+				while ( $arr_posts_hero->have_posts() ) {
+						$arr_posts_hero->the_post();
 						?>
             <div id="post-<?php the_ID(); ?>" class="item">
                 <img class="owl-lazy" data-src="<?php
@@ -76,8 +76,8 @@ get_header();
 			<div class="owl-carousel owl-events owl-theme ">
 
 								<?php
-									while ( $arr_posts->have_posts() ) {
-											$arr_posts->the_post();
+									while ( $arr_posts_events->have_posts() ) {
+											$arr_posts_events->the_post();
 											?>
                         <div id="post-<?php the_ID(); ?>" class="item">
                            <?php
@@ -124,8 +124,8 @@ get_header();
             <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Quote')->term_id ); ?></h2>
             <div class="owl-carousel owl-quotes owl-theme">
 												<?php
-													while ( $arr_posts->have_posts() ) {
-															$arr_posts->the_post();
+													while ( $arr_posts_quotes->have_posts() ) {
+															$arr_posts_quotes->the_post();
 															?>
                         <a href="<?php the_permalink(); ?>">
                             <div id="post-<?php the_ID(); ?>" class="item quote__item">
@@ -173,8 +173,8 @@ get_header();
 			?>
 		<section id="edelweiss">
 						<?php
-							while ( $arr_posts->have_posts() ) {
-									$arr_posts->the_post();
+							while ( $arr_posts_edelweiss->have_posts() ) {
+									$arr_posts_edelweiss->the_post();
 									?>
 									<div id="post-<?php the_ID(); ?>" class="content horizontal__block">
 										<div class="content__img">
@@ -217,8 +217,8 @@ get_header();
 				<h2 class="center section-heading">Sponsors</h2>
 					<section class="sponsors__container">
 						<?php
-							while ( $arr_posts->have_posts() ) {
-									$arr_posts->the_post();
+							while ( $args_sponsors->have_posts() ) {
+									$args_sponsors->the_post();
 									?>
 									<div id="post-<?php the_ID(); ?>" class="sponsors__img">
 											<?php
