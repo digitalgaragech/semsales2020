@@ -1,6 +1,6 @@
 jQuery(document).ready(function () {
     jQuery('.owl-banners').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: false,
         dots: true,
@@ -36,7 +36,7 @@ jQuery(document).ready(function () {
         }
     });
     jQuery('.owl-quotes').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         responsive: {
