@@ -15,12 +15,10 @@
 get_header();
 ?>
 <?php
-	$paged_hero = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 	$args_hero = array(
 			'post_type' => 'post',
 			'category_name' => 'Banner',
 			'posts_per_page' => 5,
-			'paged' => $paged_hero,
 	);
 	$arr_posts_hero = new WP_Query( $args_hero );
 
@@ -58,12 +56,10 @@ get_header();
 } // end if
 ?>
 				<?php
-					$paged_events = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 					$args_events = array(
 							'post_type' => 'post',
 							'category_name' => 'Event',
 							'posts_per_page' => 2,
-							'paged' => $paged_events,
 					);
 					$arr_posts_events = new WP_Query( $args_events );
 
@@ -108,12 +104,10 @@ get_header();
 	} // end if
 	?>
 	<?php
-			$paged_quotes = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 			$args_quotes = array(
 					'post_type' => 'post',
 					'category_name' => 'Quote',
 					'posts_per_page' => 5,
-					'paged' => $paged_quotes,
 	);
 	$arr_posts_quotes = new WP_Query( $args_quotes );
 
@@ -161,12 +155,10 @@ get_header();
 	} // end if
 	?>
 	<?php
-		$paged_edelweiss = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 		$args_edelweiss = array(
 				'post_type' => 'post',
 				'category_name' => 'Edelweiss',
 				'posts_per_page' => 5,
-				'paged' => $paged_edelweiss,
 		);
 		$arr_posts_edelweiss = new WP_Query( $args_edelweiss );
 		if ( $arr_posts_edelweiss->have_posts() ) {
@@ -203,12 +195,10 @@ get_header();
 	} // end if
 ?>
 			<?php
-				$paged_sponsors = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
 				$args_sponsors = array(
 						'post_type' => 'post',
 						'category_name' => 'Sponsors',
 						'posts_per_page' => 5,
-						'paged' => $paged_sponsors,
 				);
 				$arr_posts_sponsors = new WP_Query( $args_sponsors );
 				if ( $arr_posts_sponsors->have_posts() ) {
