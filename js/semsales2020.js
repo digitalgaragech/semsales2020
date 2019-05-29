@@ -19,7 +19,7 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.owl-events').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: false,
         dots: true,

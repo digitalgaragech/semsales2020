@@ -58,7 +58,6 @@ get_header();
 				<?php
 					$args_events = array(
 							'post_type' => 'post',
-    					'post_status' => 'publish',
 							'category_name' => 'Event',
 							'posts_per_page' => 2,
 					);
