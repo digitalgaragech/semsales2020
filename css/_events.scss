@@ -19,11 +19,11 @@
     h2{
         color:$dark-color;
     }
-    img{
-        border-radius: $border-radius--small;
-        &:before{
-          content: "";
-          background-color:$dark-color;
-        }
+    .entry-img{
+      background-color: $dark-color;
+      img{
+          opacity: 0.5;
+          border-radius: $border-radius--small;
+      }
     }
 }

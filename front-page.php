@@ -76,6 +76,7 @@ get_header();
 											$arr_posts_events->the_post();
 											?>
                         <div id="post-<?php the_ID(); ?>" class="item">
+													 <div class="entry-img">
                            <?php
                             if ( has_post_thumbnail() ) {
                                 the_post_thumbnail();
@@ -84,7 +85,8 @@ get_header();
                                 echo '<div class="img-placeholder">nopic</div>';
                             }
                             ?>
-                            <header class="entry-header">
+														</div>
+														<header class="entry-header">
                                 <h3 class="entry-title"><?php the_title(); ?></h3>
                             </header>
                             <div class="entry-content">

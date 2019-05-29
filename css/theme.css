@@ -561,11 +561,11 @@ header.site-header {
     color: #706C7B; }
   #events h2 {
     color: #2A0F76; }
-  #events img {
-    border-radius: 3px; }
-    #events img:before {
-      content: "";
-      background-color: #2A0F76; }
+  #events .entry-img {
+    background-color: #2A0F76; }
+    #events .entry-img img {
+      opacity: 0.5;
+      border-radius: 3px; }
 
 #quotes {
   background-color: #fff;
