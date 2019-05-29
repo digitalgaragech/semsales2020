@@ -563,6 +563,9 @@ header.site-header {
     color: #2A0F76; }
   #events img {
     border-radius: 3px; }
+    #events img:before {
+      content: "";
+      background-color: #2A0F76; }
 
 #quotes {
   background-color: #fff;

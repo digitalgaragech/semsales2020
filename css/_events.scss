@@ -21,5 +21,9 @@
     }
     img{
         border-radius: $border-radius--small;
+        &:before{
+          content: "";
+          background-color:$dark-color;
+        }
     }
 }
