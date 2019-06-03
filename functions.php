@@ -176,6 +176,7 @@ function my_assets() {
 
 add_action( 'wp_enqueue_scripts', 'my_assets' );
 
-
 // Remove p tags from category description
 remove_filter('term_description','wpautop');
+
+add_image_size( 'square-thumb', 500, 500, true ); // Hard Crop Mode
