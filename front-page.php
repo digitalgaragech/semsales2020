@@ -79,7 +79,7 @@ get_header();
 													 <div class="entry-img">
                            <?php
                             if ( has_post_thumbnail() ) {
-                                the_post_thumbnail( 'medium' );
+                                the_post_thumbnail( 'thumbnail' );
                             }
                             else {
                                 echo '<div class="img-placeholder">nopic</div>';
