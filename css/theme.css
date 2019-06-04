@@ -657,8 +657,10 @@ header.site-header {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: thumbnail;
-    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
-    clip-path: polygon(100% 0, 0 0, 100% 100%); }
+    background-color: #2A0F76; }
+    #main article .post-thumbnail img {
+      -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+      clip-path: polygon(100% 0, 0 0, 100% 100%); }
   #main article .entry-content {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
