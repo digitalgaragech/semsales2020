@@ -25,13 +25,16 @@
       min-width: 400px;
       width: 33%;
       grid-area: thumbnail;
-      margin-top: 40px;
+      margin-top: 120px;
+      background-color: $dark-color;
+      height: 100vh;
       @media screen and (min-width: $breakpoint-large) {
         left:0;
       }
       img{
-        -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+        clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+        margin-top: -80px;
       }
     }
     .entry-content {
