@@ -652,13 +652,13 @@ header.site-header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 4;
-    grid-area: header;
-    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
-    clip-path: polygon(100% 0, 0 0, 100% 100%); }
+    grid-area: header; }
   #main article .post-thumbnail {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    grid-area: thumbnail; }
+    grid-area: thumbnail;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%); }
   #main article .entry-content {
     -ms-grid-row: 2;
     -ms-grid-column: 2;

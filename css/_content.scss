@@ -18,11 +18,11 @@
   article{
     .entry-header {
       grid-area: header;
-      -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
-      clip-path: polygon(100% 0, 0 0, 100% 100%);
     }
     .post-thumbnail {
       grid-area: thumbnail;
+      -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+      clip-path: polygon(100% 0, 0 0, 100% 100%);
     }
     .entry-content {
       grid-area: main;
