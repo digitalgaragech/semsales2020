@@ -23,8 +23,8 @@
       grid-area: thumbnail;
       background-color: $dark-color;
       img{
-        -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
-        clip-path: polygon(100% 0, 0 0, 100% 100%);
+        -webkit-clip-path: polygon(0 100%, 100% 78%, 100% 0, 0 0);
+        clip-path: polygon(0 100%, 100% 78%, 100% 0, 0 0);
       }
     }
     .entry-content {
