@@ -21,10 +21,13 @@
     }
     .post-thumbnail {
       position: absolute;
-      left: 0;
+      left: calc(33% - 400px);
+      min-width: 400px;
       width: 33%;
       grid-area: thumbnail;
-      background-color: $dark-color;
+      @media screen and (min-width: $breakpoint-large) {
+        left:0;
+      }
       img{
         -webkit-clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
