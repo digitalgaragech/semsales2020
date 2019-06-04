@@ -665,8 +665,8 @@ header.site-header {
       #main article .post-thumbnail {
         left: 0; } }
     #main article .post-thumbnail img {
-      -webkit-clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);
-      clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%); }
+      -webkit-clip-path: polygon(0 23%, 100% 0, 100% 98%, 0% 100%);
+      clip-path: polygon(0 23%, 100% 0, 100% 98%, 0% 100%); }
   #main article .entry-content {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
