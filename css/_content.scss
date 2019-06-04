@@ -20,6 +20,9 @@
       grid-area: header;
     }
     .post-thumbnail {
+      position: absolute;
+      left: 0;
+      width: 33%;
       grid-area: thumbnail;
       background-color: $dark-color;
       img{
@@ -40,8 +43,8 @@
     grid-template-columns: 34% 33% 33%;
     grid-template-rows: auto;
     grid-template-areas:
-      "header header header"
+      ". header header"
       "thumbnail main main"
-      "footer footer footer";
+      ". footer footer";
   }
 }
