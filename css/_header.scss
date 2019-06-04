@@ -1,7 +1,7 @@
 
 header.site-header{
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 33% auto;
     height:$header__height;
     @media screen and (min-width: $breakpoint-large) {
         height: $header__height--desktop;
@@ -26,7 +26,7 @@ header.site-header{
     max-width: none;
 }
 .site-branding{
-    
+
 }
 .main-navigation{
     display: flex;
@@ -64,4 +64,3 @@ header.site-header{
         }
     }
 }
-

@@ -417,8 +417,8 @@ b, strong {
 header.site-header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px auto;
-  grid-template-columns: 300px auto;
+  -ms-grid-columns: 33% auto;
+  grid-template-columns: 33% auto;
   height: 160px;
   overflow: hidden; }
   @media screen and (min-width: 60em) {
