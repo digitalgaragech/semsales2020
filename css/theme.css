@@ -639,3 +639,33 @@ header.site-header {
     color: #fff; }
   .content__content {
     margin: 0 40px; }
+
+#main article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px 50px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header" "thumbnail main main main" "footer footer footer footer"; }
+  #main article .entry-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: header; }
+  #main article .post-thumbnail {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: thumbnail; }
+  #main article .entry-content {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: main; }
+  #main article .entry-sidebar {
+    grid-area: sidebar; }
+  #main article .entry-footer {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: footer; }

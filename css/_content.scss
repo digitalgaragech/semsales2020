@@ -14,3 +14,29 @@
     margin: 0 40px;
   }
 }
+#main{
+  article{
+    .entry-header {
+      grid-area: header;
+    }
+    .post-thumbnail {
+      grid-area: thumbnail;
+    }
+    .entry-content {
+      grid-area: main;
+    }
+    .entry-sidebar{
+      grid-area: sidebar;
+    }
+    .entry-footer {
+      grid-area: footer;
+    }
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "thumbnail main main main"
+      "footer footer footer footer";
+  }
+}
