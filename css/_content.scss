@@ -30,7 +30,9 @@
       min-width: 400px;
       width: 33%;
       grid-area: thumbnail;
+
       margin-top: 120px;
+
       background-color: $dark-color;
       height: calc(100vh - 340px);
       @media screen and (min-width: $breakpoint-large) {
@@ -58,5 +60,12 @@
       ". header header"
       "thumbnail main main"
       ". footer footer";
+  }
+}
+.archive #main{
+  article{
+    .post-thumbnail {
+      margin-top: 0;
+    }
   }
 }

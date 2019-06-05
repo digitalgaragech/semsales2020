@@ -691,3 +691,6 @@ header.site-header {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-area: footer; }
+
+.archive #main article .post-thumbnail {
+  margin-top: 0; }
