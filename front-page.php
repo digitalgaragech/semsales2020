@@ -58,7 +58,7 @@ get_header();
 				<?php
 					$args_events = array(
 							'post_type' => 'post',
-							'category_name' => 'Event',
+							'category_name' => 'Events',
 							'posts_per_page' => 6,
 					);
 					$arr_posts_events = new WP_Query( $args_events );
