@@ -663,7 +663,7 @@ header.site-header {
     grid-area: thumbnail;
     margin-top: 120px;
     background-color: #2A0F76;
-    height: 100vh; }
+    height: calc(100vh - 340px); }
     @media screen and (min-width: 60em) {
       #main article .post-thumbnail {
         left: 0; } }
