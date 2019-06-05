@@ -645,7 +645,7 @@ header.site-header {
     margin: 0 40px; }
 
 @media screen and (min-width: 60em) {
-  #main header {
+  #main header.page-header {
     margin-left: 34%; } }
 
 #main article {

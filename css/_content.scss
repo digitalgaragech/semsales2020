@@ -16,7 +16,7 @@
 }
 #main{
   @media screen and (min-width: $breakpoint-large) {
-    header{
+    header.page-header{
       margin-left: 34%;
     }
   }
