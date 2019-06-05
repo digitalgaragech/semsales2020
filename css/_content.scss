@@ -15,6 +15,11 @@
   }
 }
 #main{
+  @media screen and (min-width: $breakpoint-large) {
+    header{
+      margin-left: 34%;
+    }
+  }
   article{
     .entry-header {
       grid-area: header;

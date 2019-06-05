@@ -644,6 +644,10 @@ header.site-header {
   .content__content {
     margin: 0 40px; }
 
+@media screen and (min-width: 60em) {
+  #main header {
+    margin-left: 34%; } }
+
 #main article {
   display: -ms-grid;
   display: grid;
