@@ -35,7 +35,7 @@
 
       background-color: $dark-color;
       height: calc(100vh - 340px);
-      @media screen and (min-width: $breakpoint-large) {
+      @media screen and (min-width: $breakpoint-xlarge) {
         left:0;
       }
       img{
