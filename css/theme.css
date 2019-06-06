@@ -431,10 +431,10 @@ header.site-header {
       height: 240px; } }
 
 .home header.site-header {
-  height: calc($header__height + 20px); }
+  height: calc(180px + 20px); }
   @media screen and (min-width: 60em) {
     .home header.site-header {
-      height: calc($header__height--desktop + 40px); } }
+      height: calc(240px + 40px); } }
 
 .site-title,
 .site-description {
