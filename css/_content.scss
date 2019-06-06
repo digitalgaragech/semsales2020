@@ -20,46 +20,48 @@
       margin-left: 34%;
     }
   }
-  article{
-    .entry-header {
-      grid-area: header;
-    }
-    .post-thumbnail {
-      position: absolute;
-      left: calc(33% - 400px);
-      min-width: 400px;
-      width: 33%;
-      grid-area: thumbnail;
-
-      margin-top: 120px;
-
-      background-color: $dark-color;
-      height: calc(100vh - 340px);
-      @media screen and (min-width: $breakpoint-xlarge) {
-        left:0;
+  @media screen and (min-width: $breakpoint-small) {
+    article{
+      .entry-header {
+        grid-area: header;
       }
-      img{
-        -webkit-clip-path: polygon(0 90px, 100% 0, 100% calc(100% - 90px), 0% 100%);
-        clip-path: polygon(0 90px, 100% 0, 100% calc(100% - 90px), 0% 100%);
-        margin-top: -110px;
+      .post-thumbnail {
+        position: absolute;
+        left: calc(33% - 400px);
+        min-width: 400px;
+        width: 33%;
+        grid-area: thumbnail;
+
+        margin-top: 120px;
+
+        background-color: $dark-color;
+        height: calc(100vh - 340px);
+        @media screen and (min-width: $breakpoint-xlarge) {
+          left:0;
+        }
+        img{
+          -webkit-clip-path: polygon(0 90px, 100% 0, 100% calc(100% - 90px), 0% 100%);
+          clip-path: polygon(0 90px, 100% 0, 100% calc(100% - 90px), 0% 100%);
+          margin-top: -110px;
+        }
       }
+      .entry-content {
+        grid-area: main;
+      }
+      .entry-sidebar{
+        grid-area: sidebar;
+      }
+      .entry-footer {
+        grid-area: footer;
+      }
+      display: grid;
+      grid-template-columns: 34% 33% 33%;
+      grid-template-rows: auto;
+      grid-template-areas:
+        ". header header"
+        "thumbnail main main"
+        ". footer footer";
     }
-    .entry-content {
-      grid-area: main;
-    }
-    .entry-sidebar{
-      grid-area: sidebar;
-    }
-    .entry-footer {
-      grid-area: footer;
-    }
-    display: grid;
-    grid-template-columns: 34% 33% 33%;
-    grid-template-rows: auto;
-    grid-template-areas:
-      ". header header"
-      "thumbnail main main"
-      ". footer footer";
   }
 }
 .archive #main{
