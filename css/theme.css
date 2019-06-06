@@ -424,7 +424,7 @@ header.site-header {
   display: grid;
   -ms-grid-columns: 33% auto;
   grid-template-columns: 33% auto;
-  height: 160px;
+  height: 180px;
   overflow: hidden; }
   @media screen and (min-width: 60em) {
     header.site-header {
@@ -448,12 +448,15 @@ header.site-header {
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
   .main-navigation .menu-menu-1-container {
     width: 100%;
     position: absolute;
     z-index: 2;
-    top: 160px;
+    top: 180px;
     left: 0;
     background-color: #2A0F76; }
     .main-navigation .menu-menu-1-container li {
