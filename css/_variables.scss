@@ -28,16 +28,16 @@ $gutter: 4%;
 $breakpoint-small: 33.75em; // 540px
 $breakpoint-med: 45em; // 720px
 $breakpoint-large: 60em; // 960px
-$breakpoint-xlarge: 75em; // 
+$breakpoint-xlarge: 75em; //
 
 
 // Header
 $header__height--desktop: 240px;
-$header__height--desktop--logo: 220px;
+$header__height--desktop--logo: 270px;
 $header__height--tablet: 200px;
 $header__height--tablet--logo: 180px;
 $header__height--mobile: 160px;
-$header__height--mobile--logo: 140px;
+$header__height--mobile--logo: 180px;
 $header__height: $header__height--mobile;
 $header__height--logo: $header__height--mobile--logo;
 

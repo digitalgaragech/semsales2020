@@ -436,13 +436,14 @@ header.site-header {
   top: -1000px; }
 
 .custom-logo {
-  height: 140px;
+  height: 180px;
   margin: 10px 0;
   width: auto;
-  max-width: none; }
+  max-width: none;
+  position: absolute; }
   @media screen and (min-width: 60em) {
     .custom-logo {
-      height: 220px; } }
+      height: 270px; } }
 
 .main-navigation {
   display: -webkit-box;
