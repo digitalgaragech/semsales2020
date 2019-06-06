@@ -424,11 +424,17 @@ header.site-header {
   display: grid;
   -ms-grid-columns: 33% auto;
   grid-template-columns: 33% auto;
-  height: 200px;
+  height: 180px;
   overflow: hidden; }
   @media screen and (min-width: 60em) {
     header.site-header {
-      height: 280px; } }
+      height: 240px; } }
+
+.home header.site-header {
+  height: calc($header__height + 20px); }
+  @media screen and (min-width: 60em) {
+    .home header.site-header {
+      height: calc($header__height--desktop + 40px); } }
 
 .site-title,
 .site-description {
@@ -456,7 +462,7 @@ header.site-header {
     width: 100%;
     position: absolute;
     z-index: 2;
-    top: 200px;
+    top: 180px;
     left: 0;
     background-color: #2A0F76; }
     .main-navigation .menu-menu-1-container li {
@@ -472,7 +478,7 @@ header.site-header {
       .main-navigation .menu-menu-1-container {
         background-color: transparent;
         position: static;
-        height: 280px;
+        height: 240px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -498,7 +504,7 @@ header.site-header {
         height: calc(100vh / 2); } }
     @media screen and (min-width: 60em) {
       .owl-banners .owl-item {
-        height: calc(100vh - 280px); } }
+        height: calc(100vh - 240px); } }
   .owl-banners * {
     color: #fff; }
   .owl-banners a:hover {

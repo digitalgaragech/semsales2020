@@ -8,6 +8,15 @@ header.site-header{
     }
     overflow: hidden;
 }
+.home{
+  header.site-header{
+      height:calc($header__height + 20px);
+      @media screen and (min-width: $breakpoint-large) {
+          height: calc($header__height--desktop + 40px);
+      }
+  }
+}
+
 
 .site-title,
 .site-description{
