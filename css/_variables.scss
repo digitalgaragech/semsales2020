@@ -17,9 +17,9 @@ $light-color: #CCDB4A;
 $light-color--bg: #F5F8DB;
 $light-color--hover: #A6B42F;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: $light-color;
+$color__link-visited: $light-color--hover;
+$color__link-hover: $light-color--hover;
 
 // grid
 

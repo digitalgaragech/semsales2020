@@ -77,14 +77,14 @@ img {
   height: auto; }
 
 a {
-  color: royalblue;
+  color: #CCDB4A;
   text-decoration: none; }
 
 a:hover {
-  color: midnightblue; }
+  color: #A6B42F; }
 
 a:visited {
-  color: purple; }
+  color: #A6B42F; }
 
 .section-heading {
   padding: 60px;
@@ -99,11 +99,11 @@ a:visited {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #CCDB4A; }
   a:visited {
-    color: purple; }
+    color: #A6B42F; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #A6B42F; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
