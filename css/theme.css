@@ -77,14 +77,14 @@ img {
   height: auto; }
 
 a {
-  color: #CCDB4A;
+  color: #2A0F76;
   text-decoration: none; }
 
 a:hover {
-  color: #A6B42F; }
+  color: #1b094e; }
 
 a:visited {
-  color: #A6B42F; }
+  color: #1b094e; }
 
 .section-heading {
   padding: 60px;
@@ -99,11 +99,11 @@ a:visited {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #CCDB4A; }
+  color: #2A0F76; }
   a:visited {
-    color: #A6B42F; }
+    color: #1b094e; }
   a:hover, a:focus, a:active {
-    color: #A6B42F; }
+    color: #1b094e; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
