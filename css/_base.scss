@@ -54,6 +54,16 @@ img{
     max-width: 100%;
     height: auto;
 }
+a{
+  color: $color__link;
+  text-decoration: none;
+}
+a:hover{
+  color: $color__link-hover;
+}
+a:visited{
+  color: $color__link-visited;
+}
 .section-heading{
     padding:60px;
     margin: 0;

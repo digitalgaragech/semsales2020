@@ -76,6 +76,16 @@ img {
   max-width: 100%;
   height: auto; }
 
+a {
+  color: royalblue;
+  text-decoration: none; }
+
+a:hover {
+  color: midnightblue; }
+
+a:visited {
+  color: purple; }
+
 .section-heading {
   padding: 60px;
   margin: 0; }
