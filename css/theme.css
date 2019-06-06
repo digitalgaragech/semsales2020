@@ -424,11 +424,11 @@ header.site-header {
   display: grid;
   -ms-grid-columns: 33% auto;
   grid-template-columns: 33% auto;
-  height: 180px;
+  height: 200px;
   overflow: hidden; }
   @media screen and (min-width: 60em) {
     header.site-header {
-      height: 240px; } }
+      height: 280px; } }
 
 .site-title,
 .site-description {
@@ -456,7 +456,7 @@ header.site-header {
     width: 100%;
     position: absolute;
     z-index: 2;
-    top: 180px;
+    top: 200px;
     left: 0;
     background-color: #2A0F76; }
     .main-navigation .menu-menu-1-container li {
@@ -472,7 +472,7 @@ header.site-header {
       .main-navigation .menu-menu-1-container {
         background-color: transparent;
         position: static;
-        height: 240px;
+        height: 280px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -498,7 +498,7 @@ header.site-header {
         height: calc(100vh / 2); } }
     @media screen and (min-width: 60em) {
       .owl-banners .owl-item {
-        height: calc(100vh - 240px); } }
+        height: calc(100vh - 280px); } }
   .owl-banners * {
     color: #fff; }
   .owl-banners a:hover {
