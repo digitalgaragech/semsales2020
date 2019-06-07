@@ -39,7 +39,8 @@ get_header();
                 ?>">
                 <div class="entry-banner container">
                     <header class="entry-header">
-                        <h1 class="entry-title"><?php the_title(); ?></h1>
+                        <h1 class="entry-title">
+		                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                         <?php the_excerpt(); ?>
                     </header>
                     <div class="entry-content">
@@ -87,7 +88,8 @@ get_header();
                             ?>
 														</div>
 														<header class="entry-header">
-                                <h3 class="entry-title"><?php the_title(); ?></h3>
+                                <h3 class="entry-title">
+						                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             </header>
                             <div class="entry-content">
                                 <?php the_excerpt(); ?>
@@ -115,7 +117,8 @@ get_header();
 			if ( $arr_posts_quotes->have_posts() ) { ?>
 	<section id="quotes">
         <div class="container">
-            <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Quote')->term_id ); ?></h2>
+            <h2 class="center section-heading">
+								<a href="<?php the_permalink(); ?>"><?php echo category_description( get_category_by_slug('Quote')->term_id ); ?></a></h2>
             <div class="owl-carousel owl-quotes owl-theme">
 												<?php
 													while ( $arr_posts_quotes->have_posts() ) {
@@ -178,7 +181,8 @@ get_header();
 										</div>
 										<div class="content__content">
 											<header class="entry-header">
-													<h4 class="entry-title"><?php the_title(); ?></h4>
+													<h4 class="entry-title">
+			                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 											</header>
 											<div class="entry-content">
 													<?php the_excerpt(); ?>
