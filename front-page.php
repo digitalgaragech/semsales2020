@@ -182,7 +182,7 @@ get_header();
 											</header>
 											<div class="entry-content">
 													<?php the_excerpt(); ?>
-													<a class="btn btn-big btn-white" href="<?php the_permalink(); ?>">En savoir plus</a>
+													<a class="btn btn-white" href="<?php the_permalink(); ?>">En savoir plus</a>
 											</div>
 									</div>
 							</div>
