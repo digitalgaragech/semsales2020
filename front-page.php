@@ -98,7 +98,7 @@ get_header();
 											} // end while
 								?>
             </div>
-            <a class="center btn btn-big btn-outline" href="/programme">Voir le programme complet</a>
+            <a class="center btn btn-big btn-outline" href="/categorie/programme/">Voir le programme complet</a>
         </div>
 	</section>
 
@@ -112,8 +112,6 @@ get_header();
 					'posts_per_page' => 5,
 	);
 	$arr_posts_quotes = new WP_Query( $args_quotes );
-
-
 			if ( $arr_posts_quotes->have_posts() ) { ?>
 	<section id="quotes">
         <div class="container">
