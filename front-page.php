@@ -69,7 +69,8 @@ get_header();
 					if ( $arr_posts_events->have_posts() ) { ?>
 	<section id="events">
         <div class="container">
-            <h2 class="center section-heading"><?php echo category_description( get_category_by_slug('Event')->term_id ); ?></h2>
+            <h2 class="center section-heading">
+								<a href="<?php the_permalink(); ?>"><?php echo category_description( get_category_by_slug('Programme')->term_id ); ?></a></h2>
 			<div class="owl-carousel owl-events owl-theme ">
 
 								<?php
