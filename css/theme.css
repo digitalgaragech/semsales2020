@@ -595,9 +595,10 @@ header.site-header {
     color: #2A0F76; }
 
 #edelweiss .content__content {
-  padding: 100px;
-  font-size: 2rem;
-  text-transform: uppercase; }
+  padding: 100px; }
+  #edelweiss .content__content h4 {
+    font-size: 2rem;
+    text-transform: uppercase; }
 
 #quotes {
   background-color: #fff;
