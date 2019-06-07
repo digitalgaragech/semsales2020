@@ -539,6 +539,8 @@ header.site-header {
       top: 20vh; }
       .entry-banner h1 {
         font-size: 3.6rem; }
+        .entry-banner h1 a {
+          color: inherit; }
       .entry-banner p {
         font-size: 28px; } }
 
@@ -591,8 +593,6 @@ header.site-header {
     margin: 40px; }
   #events h3, #events p {
     color: #706C7B; }
-    #events h3 a, #events p a {
-      color: inherit; }
   #events h2 {
     color: #2A0F76; }
 
