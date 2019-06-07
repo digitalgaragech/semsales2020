@@ -70,7 +70,7 @@ get_header();
 	<section id="events">
         <div class="container">
             <h2 class="center section-heading">
-								<a href="<?php the_permalink(); ?>"><?php echo category_description( get_category_by_slug('Programme')->term_id ); ?></a></h2>
+								<a href="/categorie/programme/"><?php echo category_description( get_category_by_slug('Programme')->term_id ); ?></a></h2>
 			<div class="owl-carousel owl-events owl-theme ">
 
 								<?php
