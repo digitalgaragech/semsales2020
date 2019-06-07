@@ -3,6 +3,9 @@
     &__content{
       padding: 100px;
       h4{
+        a{
+          color: inherit;
+        }
         font-size: 2rem;
         text-transform: uppercase;
       }

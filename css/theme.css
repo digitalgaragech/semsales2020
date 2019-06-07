@@ -591,6 +591,8 @@ header.site-header {
     margin: 40px; }
   #events h3, #events p {
     color: #706C7B; }
+    #events h3 a, #events p a {
+      color: inherit; }
   #events h2 {
     color: #2A0F76; }
 
@@ -599,6 +601,8 @@ header.site-header {
   #edelweiss .content__content h4 {
     font-size: 2rem;
     text-transform: uppercase; }
+    #edelweiss .content__content h4 a {
+      color: inherit; }
 
 #quotes {
   background-color: #fff;
