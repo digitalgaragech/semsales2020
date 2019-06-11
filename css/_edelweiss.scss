@@ -2,6 +2,9 @@
   .content{
     &__content{
       @media screen and (min-width: $breakpoint-large) {
+        padding: 50px;
+      }
+      @media screen and (min-width: $breakpoint-xlarge) {
         padding: 100px;
       }
       h4{

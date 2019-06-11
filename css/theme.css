@@ -598,6 +598,10 @@ header.site-header {
 
 @media screen and (min-width: 60em) {
   #edelweiss .content__content {
+    padding: 50px; } }
+
+@media screen and (min-width: 75em) {
+  #edelweiss .content__content {
     padding: 100px; } }
 
 #edelweiss .content__content h4 {
