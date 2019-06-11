@@ -1,7 +1,9 @@
 #edelweiss{
   .content{
     &__content{
-      padding: 100px;
+      @media screen and (min-width: $breakpoint-large) {
+        padding: 100px;
+      }
       h4{
         a{
           color: inherit;

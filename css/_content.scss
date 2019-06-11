@@ -1,7 +1,9 @@
 .content{
   background-color: $dark-color;
   display: grid;
-  grid-template-columns: 50% auto;
+  @media screen and (min-width: $breakpoint-large) {
+      grid-template-columns: 50% auto;
+  }
   &.horizontal__block{
     img{
 

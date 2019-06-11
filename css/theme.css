@@ -596,13 +596,15 @@ header.site-header {
   #events h2 {
     color: #2A0F76; }
 
-#edelweiss .content__content {
-  padding: 100px; }
-  #edelweiss .content__content h4 {
-    font-size: 2rem;
-    text-transform: uppercase; }
-    #edelweiss .content__content h4 a {
-      color: inherit; }
+@media screen and (min-width: 60em) {
+  #edelweiss .content__content {
+    padding: 100px; } }
+
+#edelweiss .content__content h4 {
+  font-size: 2rem;
+  text-transform: uppercase; }
+  #edelweiss .content__content h4 a {
+    color: inherit; }
 
 #quotes {
   background-color: #fff;
@@ -666,9 +668,11 @@ header.site-header {
 .content {
   background-color: #2A0F76;
   display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% auto;
-  grid-template-columns: 50% auto; }
+  display: grid; }
+  @media screen and (min-width: 60em) {
+    .content {
+      -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto; } }
   .content.horizontal__block h4, .content.horizontal__block p {
     color: #fff; }
   .content__content {
