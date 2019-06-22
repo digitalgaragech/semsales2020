@@ -41,7 +41,7 @@ get_header();
                     <header class="entry-header">
                         <h1 class="entry-title">
 		                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                        <?php get_excerpt(); ?>
+                        <?php the_excerpt(); ?>
                     </header>
                     <div class="entry-content">
                         <a class="btn btn-big btn-white" href="<?php the_permalink(); ?>">En savoir plus</a>
