@@ -93,7 +93,7 @@ get_header();
 						                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             </header>
                             <div class="entry-content">
-                                <?php get_excerpt(); ?>
+                                <?php the_excerpt(); ?>
                                 <a class="btn btn-default" href="<?php the_permalink(); ?>">En savoir plus</a>
                             </div>
                         </div>
